@@ -1,0 +1,135 @@
+#container {
+    border: 2px solid transparent;
+    background-image: url('/images/image11.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#title {
+    font-size: xx-large;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+
+#navigation {
+    padding: 12px;
+    background-color: transparent;
+}
+
+#navigation ul li {
+    padding: 12px;
+    font-size: larger;
+    font-weight: 700;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+#main-body {
+    border: 2px solid transparent;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cast {
+    order: 0;
+    border: 2px solid transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.casted {
+    display: flex;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    width: 350px;
+    height: 350px;
+    margin-left: 40px;
+}
+
+.iamge {
+    margin-right: 20px;
+}
+
+.iamge img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px
+}
+
+.description a h1,
+h5 {
+    color: black;
+}
+
+.description a h1:hover,
+h5:hover {
+    text-decoration: underline;
+}
+
+#stats {
+    order: 1;
+    border: 2px solid transparent;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 69px;
+}
+
+.maker {
+    padding: 12px;
+    margin: 50px;
+}
+
+.maker img {
+    width: 214px;
+    height: 317px;
+}
+
+.maker h1 {
+    color: black;
+}
+
+.maker h1:hover {
+    text-decoration: underline;
+}
+
+#similar {
+    margin-top: 69px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#similar h1 {
+    text-decoration: underline;
+    color: black;
+}
+
+#similar ul {
+    list-style-type: none;
+}
+
+#similar ul li {
+    margin: 40px;
+    width: fit-content;
+}
+
+#similar ul li img {
+    width: auto;
+    max-width: auto;
+    min-width: auto;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #similar ul li img {
+        width: 370px;
+        height: 185px;
+    }
+}

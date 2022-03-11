@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="vue-app.js" defer></script>
+
+    <title>Into the wild</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="heading">
+            <header>
+                <div id="title">
+                    <h1>Into the wild</h1>
+                </div>
+                <div id="navigation">
+                    <nav class="navbar navbar-expand-xl bg-transparent ">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-white h2" href="/about" data-toggle="tooltip" data-placement="top" title="About movie!">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white h2" href="/story" data-toggle="tooltip" data-placement="top" title="Real story!">Story</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/clips" class="nav-link text-white h2" data-toggle="tooltip" data-placement="top" title="Watch movie clips!">Movie clips</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/images" class="nav-link text-white h2" data-toggle="tooltip" data-placement="top" title="Movie images">Images</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.amazon.in/Into-Wild-Jon-Krakauer/dp/0385486804" class="nav-link text-white h2" data-toggle="tooltip" data-placement="top" title="Buy the book">Read</a>
+                            </li>
+
+
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white h2" href="#" id="navbardrop" data-toggle="dropdown">
+                        Watch on
+                      </a>
+                                <div class="dropdown-menu bg-transparent">
+                                    <a class="dropdown-item bg-transparent text-white h3" href="https://www.primevideo.com/detail/Into-The-Wild/0PQER6UBRU8ZHGA8XD0WGBUU8I">Amazon</a>
+                                    <a class="dropdown-item bg-transparent text-white h3" href="https://www.netflix.com/in/title/70075064">Netflix</a>
+                                    <a class="dropdown-item bg-transparent text-white h3" href="https://www.vudu.com/content/movies/details/Into-the-Wild/130442">Vudu</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <div id="main-body">
+            <a class="nav-link text-dark" href="#" data-toggle="tooltip" data-placement="top" title="Click to change quotes" @click="clicked"></a>
+            <h1>“Happiness is only real when shared”<br> ― Jon Krakauer, Into the Wild</h1>
+            <h1>“It's not always necessary to be strong, but to feel strong.”<br> ― Jon Krakauer, Into the Wild</h1>
+            <h1>“I now walk into the wild.”<br> ― Jon Krakauer, Into the Wild</h1>
+            <h1>“Some people feel like they don't deserve love. They walk away quietly into empty spaces,<br> trying to close the gaps of the past.”<br> ― Jon Krakauer, Into the Wild</h1>
+            <h1>“When you forgive, you love. And when you love, God’s light shines upon you.”<br> ― Jon Krakauer, Into the Wild</h1>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+</body>
+
+</html>
