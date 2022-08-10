@@ -14,7 +14,7 @@ const route = require('./router');
 const logStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' });
 app.use(route);
 app.use(helmet());
-//app.use(compression());
+app.use(compression());
 app.use(morgan('combined'))
 var port_number = process.env.PORT || 3000;
 app.listen(port_number);
