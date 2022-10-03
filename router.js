@@ -36,4 +36,7 @@ router.get('/chapter4', (req, res, next) => {
 router.get('/chapter5', (req, res, next) => {
     res.render('chapter5.ejs', { pageTitle: 'chapter 6 and 7' })
 })
+router.get('/poster', (req, res, next) => {
+    res.render('poster.ejs')
+})
 module.exports = router;

@@ -1,3 +1,12 @@
+* {
+    overflow-y: auto;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+}
+
 #container {
     border: 2px solid transparent;
     background-attachment: fixed;

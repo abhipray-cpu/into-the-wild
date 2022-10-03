@@ -1,3 +1,12 @@
+* {
+    overflow-y: auto;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+}
+
 #container {
     border: 2px solid transparent;
     background-image: url('/images/image11.jpg');
@@ -125,7 +134,6 @@ h5:hover {
     max-width: auto;
     min-width: auto;
 }
-
 
 @media only screen and (max-width: 800px) {
     #similar ul li img {
