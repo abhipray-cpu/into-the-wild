@@ -18,5 +18,6 @@ app.use(route);
 // app.use(helmet());
 // app.use(compression());
 // app.use(morgan('combined'))
-var port_number = process.env.PORT || 3000;
+var port_number = 3000;
 app.listen(port_number);
+console.log("listening on port " + port_number);
